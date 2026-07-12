@@ -5,6 +5,23 @@
    3) Current-year stamp
    Region choice persists via localStorage (wrapped for static hosting).
    ========================================================================== */
+/* ---- Google tag (gtag.js) — GA4 · injected once per page site-wide ---- */
+(function () {
+  'use strict';
+  var GA_ID = 'G-S259LKNZFN';
+  if (window.__ga_loaded) return;          // never add more than one tag per page
+  window.__ga_loaded = true;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+  (document.head || document.documentElement).appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', GA_ID);
+})();
+
 /* ---- Site icon: use the PNG brand icon site-wide ---- */
 (function () {
   'use strict';
