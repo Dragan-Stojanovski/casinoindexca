@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Methodology — How the Safety Index Works | CasinoIndexCA</title>
+  <meta name="description" content="The full, published CasinoIndexCA methodology: the four weighted pillars (licensing, payouts, terms integrity, dispute record), how we collect data, and our conflict-of-interest policy." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://casinoindexca.com/methodology/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CasinoIndexCA" />
+  <meta property="og:title" content="Methodology — How the Safety Index Works | CasinoIndexCA" />
+  <meta property="og:locale" content="en_CA" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/img/favicon.svg" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <style>
+    .mtbl{width:100%;border-collapse:collapse;margin:18px 0;font-size:.92rem}
+    .mtbl th,.mtbl td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line)}
+    .mtbl th{font-family:var(--font-mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--bg-soft)}
+    .mtbl td{color:var(--ink-soft)}
+    .prose h2{margin-top:36px}
+  </style>
+</head>
+<body>
+
+  <div id="agco-banner" class="agco-banner hidden" role="status">
+    <div class="container">
+      <span class="tag">ON · AGCO MODE</span>
+      <span class="msg">Advertising standards applied — promotional offers, bonuses and credit inducements are not shown to Ontario visitors.</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand-logo" href="/" aria-label="CasinoIndexCA home">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#d11f2d"/><svg x="3.4" y="3.4" width="17.2" height="17.2" viewBox="80 40 420 440" preserveAspectRatio="xMidYMid meet"><path fill="#ffffff" d="M383.8 351.7c2.5-2.5 105.2-92.4 105.2-92.4l-17.5-7.5c-10-4.9-7.4-11.5-5-17.4l20-59.9-56.5 12.5c-5 1.2-8.4-2.5-9.9-7.4l-7.5-24.9-45 50.4c-6.2 7.5-18.7 7.5-14.9-10l19.9-105.6-27.4 14.9c-7.5 5-15 0-17.4-7.5l-30-59.9-30 59.9c-2.5 7.5-10 12.5-17.5 7.5l-27.4-14.9 19.9 105.6c3.7 17.5-8.7 17.5-14.9 10l-45-50.4-7.5 24.9c-1.5 5-5 8.7-9.9 7.4L96.8 166.6l20 59.9c2.5 6 5 12.5-5 17.4l-17.5 7.5s102.6 89.9 105.2 92.4c5 5 10 7.5 5 22.4l-10 32.4c37.4-4.9 72.4-9.9 109.8-14.9 3.7 0 10 5 10 10l-5 112.3h37.5l-5-112.3c0-5 6.2-10 10-10 37.4 5 72.4 10 109.8 14.9l-10-32.4c-5-14.9 0-17.4 5-22.4z"/></svg></svg>
+          <span class="brand-name">CasinoIndex<span>CA</span></span>
+        </a>
+        <span class="geo-badge">
+          <span class="pulse"></span>
+          <span class="mono">System: <span id="geo-badge">Canada · Standard</span></span>
+        </span>
+      </div>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li><li><a href="/#casinos">Operator Index</a></li><li><a href="/methodology" class='is-active'>Methodology</a></li><li><a href="/#ontario-hub">Ontario</a></li><li><a href="/responsible-gambling">Responsible Gambling</a></li><li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <span class="region-label eyebrow">Region</span>
+        <div class="seg" role="group" aria-label="Select your province or region">
+          <button type="button" class="seg-btn" data-region="roc" aria-pressed="true">Canada (RoC)</button>
+          <button type="button" class="seg-btn" data-region="on" aria-pressed="false">Ontario</button>
+        </div>
+        <label class="sr-only" for="region-select">Region</label>
+        <select id="region-select" class="sr-only">
+          <option value="roc">Canada (Rest of Country)</option>
+          <option value="on">Ontario</option>
+        </select>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul><li><a href="/">Home</a></li><li><a href="/#casinos">Operator Index</a></li><li><a href="/methodology">Methodology</a></li><li><a href="/#ontario-hub">Ontario</a></li><li><a href="/responsible-gambling">Responsible Gambling</a></li><li><a href="/about">About</a></li></ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="glow"></div>
+      <div class="container page-hero-inner">
+        <p class="eyebrow">The scoring model</p>
+        <h1>The <span class="gradient-text">Safety Index</span>, explained in full.</h1>
+        <p>Every casino we list is scored out of 10 against four fixed, weighted pillars. The model is published in full — so you can check our work, hold us to it, and be certain that no operator can quietly buy its way up the list.</p>
+      </div>
+    </section>
+
+    <section class="section tint">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The four pillars</p>
+          <h2>What goes into a Safety Index score</h2>
+        </div>
+        <div class="method-grid">
+          <div class="method-step"><div class="num">35%</div><h3>Licensing &amp; Trust</h3><p>Regulator identity and strictness, verifiable licence number, enforcement history, corporate transparency and fund-segregation rules.</p></div>
+          <div class="method-step"><div class="num">30%</div><h3>Payout Reliability</h3><p>Real withdrawals we fund and time end-to-end, KYC friction, method availability, withdrawal limits and settlement consistency.</p></div>
+          <div class="method-step"><div class="num">20%</div><h3>Terms Integrity</h3><p>Wagering requirements, maximum-cashout caps, max-bet-while-wagering rules, game weighting and dormancy clauses, read line by line.</p></div>
+          <div class="method-step"><div class="num">15%</div><h3>Dispute Record</h3><p>Complaint volume relative to size, the nature of those complaints, and the speed and fairness of the operator's resolution.</p></div>
+        </div>
+        <p class="mono" style="margin-top:22px;font-size:.78rem;color:var(--faint)">The 35 / 30 / 20 / 15 weighting is fixed and applied identically to every operator. A weakness in any single pillar caps the overall score — a great licence cannot compensate for unreliable payouts.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container prose">
+        <h2>Why we weight, rather than average</h2>
+        <p>The Safety Index is deliberately <em>not</em> a flat average of four numbers, because the four factors are not equally important. A casino could have the biggest game library and the slickest app in Canada, but if its licence is unverifiable and its payouts stall, it is not safe — and the weighting ensures those failings dominate the score rather than being averaged away by cosmetic strengths. Licensing and payouts together make up 65% of the score for exactly this reason: they are what stand between you and your money.</p>
+
+        <h2>Pillar 1 — Licensing &amp; Trust (35%)</h2>
+        <p>This carries the largest weight because it is the foundation everything else rests on. For every operator we <strong>identify the regulator, confirm the licence number against that regulator's own public register</strong>, and assess how much protection the licence actually affords. A Malta Gaming Authority licence — with strict fund-segregation, audit and dispute-resolution requirements — sits at the top; long-established regulators such as the Kahnawake Gaming Commission and the reformed Curaçao Gaming Control Board follow; and Ontario's iGaming Ontario / AGCO framework provides strong domestic recourse for Ontario players. We also weigh corporate transparency (is a real operating company named?), enforcement history, and third-party game-fairness certification. Where a licence cannot be independently verified, we say so plainly and the score is capped — an unverifiable licence means no meaningful recourse if a payout is withheld.</p>
+
+        <h2>Pillar 2 — Payout Reliability (30%)</h2>
+        <p>The second-largest weight, because a casino that will not pay is worthless no matter how good it looks. We do not accept the word "instant" from a marketing page. We <strong>register a real account as a Canadian player, deposit our own money, play a normal session, and request genuine withdrawals</strong> across Interac, cards and crypto, timestamping two separate moments: when the request enters "pending", and when the money actually arrives. The gap between those, repeated across methods, produces the pending-review and processing figures on our pages. We deliberately test the <strong>first withdrawal from a fresh account</strong>, because that is when identity verification (KYC) is triggered and where most player complaints originate. We also record withdrawal limits, since a fast casino with a low weekly cap can still take weeks to release a big win.</p>
+
+        <h2>Pillar 3 — Terms Integrity (20%)</h2>
+        <p>Here we read the fine print so you don't have to. We scrutinise the <strong>wagering requirement</strong> and whether it applies to the bonus only or deposit-plus-bonus; the <strong>maximum-bet-while-wagering</strong> rule that can void a bonus if breached; the <strong>maximum cashout</strong> that can cap winnings from an offer; <strong>game weighting</strong> that decides which games count toward playthrough; and restrictive clauses around dormancy, inactivity fees and account closure. Predatory terms — a 45× rollover, a hidden win cap that guts a big win — cost an operator points even when it pays quickly, because unfair terms are how a "generous" bonus quietly becomes worthless.</p>
+
+        <h2>Pillar 4 — Dispute Record (15%)</h2>
+        <p>The smallest but still meaningful weight. Every casino attracts the occasional complaint; what separates a trustworthy operator is fast, fair resolution rather than stonewalling. We look at <strong>complaint volume relative to the casino's size</strong>, the nature of those complaints (payment delays and confiscated winnings weigh heaviest), and how the operator responds. A pattern of unresolved payout complaints is one of the strongest negative signals there is, and can move a score or trigger a flag on its own.</p>
+
+        <h2>How the score translates to a rating</h2>
+        <div style="overflow-x:auto">
+          <table class="mtbl">
+            <thead><tr><th>Score</th><th>Band</th><th>What it means</th></tr></thead>
+            <tbody>
+              <tr><td>9.0 – 10</td><td>Elite</td><td>Excels across every pillar at once. Only a handful of operators reach it.</td></tr>
+              <tr><td>8.0 – 8.9</td><td>Recommended</td><td>Strong and safe. This is the range our featured casinos occupy.</td></tr>
+              <tr><td>6.5 – 7.9</td><td>Solid, with caveats</td><td>Decent overall, but a weaker pillar warrants a closer look before depositing.</td></tr>
+              <tr><td>5.0 – 6.4</td><td>Use caution</td><td>A low score on licensing or payouts is a real warning sign.</td></tr>
+              <tr><td>Below 5.0</td><td>Not recommended</td><td>A serious failing — usually trust or payouts. We would not deposit here.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>How we collect and verify the data</h2>
+        <p>Scores are built from <strong>primary testing wherever possible, not operator marketing</strong>. Payout times come from live cashouts our team performs and logs. Licensing data is checked against the issuing regulator's public register on the date of audit. Bonus and account terms are read from the operator's own published documents, not summaries. Where we rely on third-party data — for example, aggregated complaint records — we weigh it against what we can verify ourselves and never treat a single unverified source as decisive.</p>
+
+        <h2>Who does the testing</h2>
+        <p>Reviews are produced by our editorial team and carry author bylines, with a second editor fact-checking each audit before publication. You can meet the people behind the scores, and read their areas of expertise, on our <a href="/about">about page</a>. Our approach to accuracy, sourcing and independence is set out in our <a href="/editorial-principles">editorial principles</a>.</p>
+
+        <h2>Refresh cadence</h2>
+        <p>The index is reviewed on a rolling basis and market metrics refresh daily. Payout performance drifts — a brand can tighten or loosen its review process, switch payment providers, or change limits without warning — so any material change (a licence lapse, a payout slowdown, a spike in unresolved disputes) can move a score or trigger a flag at any time, not only on a fixed schedule.</p>
+
+        <h2>When an operator is flagged or excluded</h2>
+        <p>A flag means we have found something that puts player money or fairness at material risk: an unverifiable licence, systematic withdrawal delays, predatory terms, or a pattern of unresolved disputes. Flagged operators are excluded from our recommendations <strong>regardless of any commercial relationship</strong>. We would rather list fewer casinos we trust than pad the site with operators we don't.</p>
+
+        <div class="callout">
+          <p class="eyebrow">Independence &amp; conflict-of-interest policy</p>
+          <p>CasinoIndexCA earns affiliate commissions from some operators, which keeps the site free to use. Those commercial relationships are <strong>logged separately from scoring and carry zero weight</strong> in the Safety Index. A casino we are paid by that fails an audit is flagged, not promoted. We publish this model openly precisely so you can hold us to it — because a ranking you cannot scrutinise is one you should not trust, ours included.</p>
+        </div>
+
+        <h2>Ontario adjustments</h2>
+        <p>For Ontario visitors, the same underlying scores apply, but presentation follows AGCO advertising standards: bonus figures, free-spin credits and dollar inducements are not shown, and licensing, registration numbers, payment options and verified payout times are shown instead. Use the region switch in the header to move between Ontario and the rest of Canada.</p>
+
+        <h2>What the Safety Index is not</h2>
+        <p>Our score measures operator safety, fairness and reliability — it is not a prediction that you will win, and it is not financial or legal advice. All gambling carries a house edge and real financial risk. Everyone we list is strictly 19+ (or the legal age in your province). If gambling stops being fun, please see our <a href="/responsible-gambling">responsible gambling resources</a>.</p>
+
+        <h2>Corrections &amp; right of reply</h2>
+        <p>If you believe an audit is out of date or inaccurate — whether you are a player or an operator — tell us and we will re-check against source and correct promptly where warranted. Operators have a right of reply on factual matters. <a href="/contact">Report a correction →</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="foot-brand">
+          <a class="brand-logo" href="/" aria-label="CasinoIndexCA home">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#d11f2d"/><svg x="3.4" y="3.4" width="17.2" height="17.2" viewBox="80 40 420 440" preserveAspectRatio="xMidYMid meet"><path fill="#ffffff" d="M383.8 351.7c2.5-2.5 105.2-92.4 105.2-92.4l-17.5-7.5c-10-4.9-7.4-11.5-5-17.4l20-59.9-56.5 12.5c-5 1.2-8.4-2.5-9.9-7.4l-7.5-24.9-45 50.4c-6.2 7.5-18.7 7.5-14.9-10l19.9-105.6-27.4 14.9c-7.5 5-15 0-17.4-7.5l-30-59.9-30 59.9c-2.5 7.5-10 12.5-17.5 7.5l-27.4-14.9 19.9 105.6c3.7 17.5-8.7 17.5-14.9 10l-45-50.4-7.5 24.9c-1.5 5-5 8.7-9.9 7.4L96.8 166.6l20 59.9c2.5 6 5 12.5-5 17.4l-17.5 7.5s102.6 89.9 105.2 92.4c5 5 10 7.5 5 22.4l-10 32.4c37.4-4.9 72.4-9.9 109.8-14.9 3.7 0 10 5 10 10l-5 112.3h37.5l-5-112.3c0-5 6.2-10 10-10 37.4 5 72.4 10 109.8 14.9l-10-32.4c-5-14.9 0-17.4 5-22.4z"/></svg></svg>
+            <span class="brand-name">CasinoIndex<span>CA</span></span>
+          </a>
+          <p>Independent, data-driven safety indexing of online casinos serving Canadian players.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Index</h4>
+          <ul>
+            <li><a href="/#casinos">Operator Index</a></li>
+            <li><a href="/#payments">Payments</a></li>
+            <li><a href="/methodology">Methodology</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/responsible-gambling">Responsible Gambling</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Ontario &amp; Legal</h4>
+          <ul>
+            <li><a href="https://www.agco.ca/" rel="nofollow noopener" target="_blank">AGCO</a></li>
+            <li><a href="https://igamingontario.ca/" rel="nofollow noopener" target="_blank">iGaming Ontario</a></li>
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/terms">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="compliance">
+        <div class="compliance-card age">
+          <p class="eyebrow">19+ Age Restriction</p>
+          <p>You must be of legal gambling age in your province to register or play. Gambling can be addictive. Please play within your means.</p>
+        </div>
+        <div class="compliance-card hidden" data-region-view="on">
+          <p class="eyebrow verified-text">Ontario Support · ConnexOntario</p>
+          <p>Free, confidential help for anyone affected by gambling, available 24/7. <a href="tel:18665312600">1-866-531-2600</a>.</p>
+        </div>
+        <div class="compliance-card" data-region-view="roc">
+          <p class="eyebrow verified-text">National Support</p>
+          <p>If gambling stops being fun, help is available. See our <a href="/responsible-gambling" style="text-decoration:underline">responsible gambling resources</a>, including guidance from the Canada Safety Council.</p>
+        </div>
+      </div>
+
+      <div class="disclosure">
+        <p><span class="mono">Affiliate disclosure —</span> CasinoIndexCA is an independent user-supported comparison platform. We may receive commissions from operators listed, which does not impact our data-driven, objective safety indexing score.</p>
+      </div>
+
+      <div class="foot-legal">
+        <p>© <span data-year>2026</span> CasinoIndexCA · All rights reserved.</p>
+        <p>Data reflects the CasinoIndexCA methodology and is for informational purposes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

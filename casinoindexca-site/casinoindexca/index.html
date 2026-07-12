@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CasinoIndexCA — The Data-Backed Audit of Canadian iGaming</title>
+  <meta name="description" content="Independent consumer-auditing agency for Canadian online casinos. Data-driven safety indexing, verified payout speeds, and AGCO-compliant reporting for Ontario players." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://casinoindexca.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CasinoIndexCA" />
+  <meta property="og:title" content="CasinoIndexCA — The Data-Backed Audit of Canadian iGaming" />
+  <meta property="og:description" content="Independent consumer-auditing agency for Canadian online casinos. Data-driven safety indexing, verified payout speeds, and AGCO-compliant reporting for Ontario players." />
+  <meta property="og:locale" content="en_CA" />
+
+  <!--
+    ============================================================
+    JSON-LD SCHEMA — ORGANIZATION (site-wide)
+    Paste the Organization structured data here on every page so
+    search engines attribute the methodology to the CasinoIndexCA brand.
+    ============================================================
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- AGCO compliance banner (Ontario region only) -->
+  <div id="agco-banner" class="agco-banner hidden" role="status">
+    <div class="container">
+      <span class="tag">ON · AGCO MODE</span>
+      <span class="msg">Advertising standards applied — promotional offers, bonuses and credit inducements are not shown to Ontario visitors.</span>
+    </div>
+  </div>
+
+  <!-- =============================== HEADER =============================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand-logo" href="index.html" aria-label="CasinoIndexCA home">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1.5" y="1.5" width="21" height="21" rx="5" stroke="#0b1220" stroke-width="1.5"/><path d="M6 15.5 L10 9.5 L13 13 L18 6.5" stroke="#2f6bff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="brand-name">CasinoIndex<span>CA</span></span>
+        </a>
+        <span class="geo-badge">
+          <span class="pulse"></span>
+          <span class="mono">System: <span id="geo-badge">Canada · Standard</span></span>
+        </span>
+      </div>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html" class='is-active'>Home</a></li><li><a href="index.html#casinos">Operator Index</a></li><li><a href="methodology.html">Methodology</a></li><li><a href="index.html#ontario-hub">Ontario</a></li><li><a href="responsible-gambling.html">Responsible Gambling</a></li><li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <span class="region-label eyebrow">Region</span>
+        <div class="seg" role="group" aria-label="Select your province or region">
+          <button type="button" class="seg-btn" data-region="roc" aria-pressed="true">Canada (RoC)</button>
+          <button type="button" class="seg-btn" data-region="on" aria-pressed="false">Ontario</button>
+        </div>
+        <label class="sr-only" for="region-select">Region</label>
+        <select id="region-select" class="sr-only">
+          <option value="roc">Canada (Rest of Country)</option>
+          <option value="on">Ontario</option>
+        </select>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul><li><a href="index.html">Home</a></li><li><a href="index.html#casinos">Operator Index</a></li><li><a href="methodology.html">Methodology</a></li><li><a href="index.html#ontario-hub">Ontario</a></li><li><a href="responsible-gambling.html">Responsible Gambling</a></li><li><a href="about.html">About</a></li></ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =============================== HERO =============================== -->
+    <section class="hero">
+      <div class="grid-bg"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow">Independent Consumer-Auditing Agency · Est. 2026</p>
+        <h1>The Definitive, <span class="gradient-text">Data-Backed Audit</span> of Canadian iGaming.</h1>
+        <p class="lead">We index every licensed operator serving Canadian players against a fixed, published methodology — payout reliability, licensing integrity, withdrawal friction, and dispute history. No operator can pay to raise its Safety Index. The data decides.</p>
+        <div class="hero-cta">
+          <a href="#casinos" class="btn btn-primary">View the Live Operator Index →</a>
+          <a href="#ontario-hub" class="btn btn-ghost">Explore the Ontario Hub</a>
+        </div>
+        <div class="trust-strip">
+          <span>Fixed scoring methodology</span>
+          <span>Verified payout testing</span>
+          <span>19+ · Play responsibly</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LIVE METRIC TRACKER DASHBOARD ==================== -->
+    <!--
+      NOTE FOR DATA TEAM: figures below are illustrative launch placeholders.
+      Wire them to the live index feed and present them as CasinoIndexCA's own
+      methodology output, not third-party certified data.
+    -->
+    <section class="metrics" aria-labelledby="metrics-heading">
+      <div class="container">
+        <div class="metrics-head">
+          <h2 id="metrics-heading">Live Market Metrics</h2>
+          <span class="pill"><span class="pulse"></span> Refreshed daily</span>
+        </div>
+        <div class="metric-grid">
+          <div class="metric">
+            <h3>Avg. Verified Payout</h3>
+            <div class="metric-value tnum">1.4 <small>hrs</small></div>
+            <p class="note">Median across tested cashouts</p>
+          </div>
+          <div class="metric">
+            <h3>Operators Under Audit</h3>
+            <div class="metric-value tnum">142</div>
+            <p class="note">Active in the current index</p>
+          </div>
+          <div class="metric">
+            <h3>Sites Flagged for Risk</h3>
+            <div class="metric-value tnum flag-text">29</div>
+            <p class="note">Excluded on integrity grounds</p>
+          </div>
+          <div class="metric">
+            <h3>Median Safety Index</h3>
+            <div class="metric-value tnum">7.8 <small>/ 10</small></div>
+            <p class="note">Weighted across live operators</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= LIVE OPERATOR MATRIX ======================= -->
+    <section id="casinos" class="section" aria-labelledby="matrix-heading" style="scroll-margin-top:90px">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The Live Matrix</p>
+          <h2 id="matrix-heading">The Live Operator Matrix</h2>
+          <p>Every record is drawn from the same audit template. Switch your region in the header — the matrix re-renders to reflect the rules that apply where you play.</p>
+        </div>
+
+        <!--
+          NOTE: operator names below ("Northlane", "Maple Royale", "Vault7") are
+          illustrative placeholders. Replace with real audited operators and
+          verified data before publishing. Do not attach unverified claims to a
+          named real brand.
+        -->
+
+        <!-- VARIANT 1 · Rest of Canada -->
+        <div data-region-view="roc" style="margin-top:34px">
+          <div class="cards">
+            
+        <article class="card">
+          <div class="card-head">
+            <div>
+              <h3>Northlane Casino</h3>
+              <p class="sub">Licence · Kahnawake (KGC)</p>
+            </div>
+            <div class="card-score">
+              <div class="val">9.2</div>
+              <div class="lbl">Index</div>
+            </div>
+          </div>
+          <dl class="kv">
+            <div class="row"><dt>Welcome offer</dt><dd>$1,000 Match + 100 Low-Wager Spins</dd></div>
+            <div class="row"><dt>Crypto deposits</dt><dd class="verified-text">BTC · ETH · USDT</dd></div>
+            <div class="row"><dt>Withdrawal speed</dt><dd class="tnum">Instant – 2 hrs</dd></div>
+            <div class="row"><dt>Wager requirement</dt><dd class="tnum">10× (low)</dd></div>
+          </dl>
+          <a href="#" class="card-cta">Read Full Audit →</a>
+        </article>
+            
+        <article class="card">
+          <div class="card-head">
+            <div>
+              <h3>Maple Royale</h3>
+              <p class="sub">Licence · Kahnawake (KGC)</p>
+            </div>
+            <div class="card-score">
+              <div class="val">8.9</div>
+              <div class="lbl">Index</div>
+            </div>
+          </div>
+          <dl class="kv">
+            <div class="row"><dt>Welcome offer</dt><dd>$750 Match + 75 Spins</dd></div>
+            <div class="row"><dt>Crypto deposits</dt><dd class="verified-text">BTC · LTC · USDT</dd></div>
+            <div class="row"><dt>Withdrawal speed</dt><dd class="tnum">1 – 4 hrs</dd></div>
+            <div class="row"><dt>Wager requirement</dt><dd class="tnum">15×</dd></div>
+          </dl>
+          <a href="#" class="card-cta">Read Full Audit →</a>
+        </article>
+            
+        <article class="card">
+          <div class="card-head">
+            <div>
+              <h3>Vault7 Gaming</h3>
+              <p class="sub">Licence · Kahnawake (KGC)</p>
+            </div>
+            <div class="card-score">
+              <div class="val warn">8.1</div>
+              <div class="lbl">Index</div>
+            </div>
+          </div>
+          <dl class="kv">
+            <div class="row"><dt>Welcome offer</dt><dd>$500 Match + 50 Spins</dd></div>
+            <div class="row"><dt>Crypto deposits</dt><dd class="verified-text">BTC · ETH</dd></div>
+            <div class="row"><dt>Withdrawal speed</dt><dd class="tnum">2 – 6 hrs</dd></div>
+            <div class="row"><dt>Wager requirement</dt><dd class="tnum">25×</dd></div>
+          </dl>
+          <a href="#" class="card-cta">Read Full Audit →</a>
+        </article>
+          </div>
+          <p class="matrix-note">Rest-of-Canada view · Offshore operators licensed outside Ontario. 19+. Terms apply at each operator.</p>
+        </div>
+
+        <!-- VARIANT 2 · Ontario (AGCO-compliant, no inducements) -->
+        <div data-region-view="on" class="hidden" style="margin-top:34px">
+          <div class="cards">
+            
+        <article class="card">
+          <div class="card-head">
+            <div>
+              <h3>Northlane Casino</h3>
+              <p class="sub verified-text"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="#0fae74" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Licensed · iGaming Ontario</p>
+            </div>
+            <div class="card-score">
+              <div class="val">9.2</div>
+              <div class="lbl">Index</div>
+            </div>
+          </div>
+          <dl class="kv">
+            <div class="row"><dt>AGCO status</dt><dd class="verified-text">Registered</dd></div>
+            <div class="row"><dt>Registration no.</dt><dd class="tnum">iGO-CA-0000000</dd></div>
+            <div class="row"><dt>Payment options</dt><dd>Interac e-Transfer · Debit</dd></div>
+            <div class="row"><dt>Verified payout time</dt><dd class="tnum">1 – 3 hrs</dd></div>
+          </dl>
+          <a href="#" class="card-cta">View Compliance Record →</a>
+        </article>
+            
+        <article class="card">
+          <div class="card-head">
+            <div>
+              <h3>Maple Royale</h3>
+              <p class="sub verified-text"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="#0fae74" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Licensed · iGaming Ontario</p>
+            </div>
+            <div class="card-score">
+              <div class="val">8.9</div>
+              <div class="lbl">Index</div>
+            </div>
+          </div>
+          <dl class="kv">
+            <div class="row"><dt>AGCO status</dt><dd class="verified-text">Registered</dd></div>
+            <div class="row"><dt>Registration no.</dt><dd class="tnum">iGO-CA-0000000</dd></div>
+            <div class="row"><dt>Payment options</dt><dd>Interac e-Transfer · Visa Debit</dd></div>
+            <div class="row"><dt>Verified payout time</dt><dd class="tnum">2 – 5 hrs</dd></div>
+          </dl>
+          <a href="#" class="card-cta">View Compliance Record →</a>
+        </article>
+            
+        <article class="card">
+          <div class="card-head">
+            <div>
+              <h3>Vault7 Gaming</h3>
+              <p class="sub verified-text"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="#0fae74" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Licensed · iGaming Ontario</p>
+            </div>
+            <div class="card-score">
+              <div class="val warn">8.1</div>
+              <div class="lbl">Index</div>
+            </div>
+          </div>
+          <dl class="kv">
+            <div class="row"><dt>AGCO status</dt><dd class="verified-text">Registered</dd></div>
+            <div class="row"><dt>Registration no.</dt><dd class="tnum">iGO-CA-0000000</dd></div>
+            <div class="row"><dt>Payment options</dt><dd>Interac e-Transfer</dd></div>
+            <div class="row"><dt>Verified payout time</dt><dd class="tnum">3 – 8 hrs</dd></div>
+          </dl>
+          <a href="#" class="card-cta">View Compliance Record →</a>
+        </article>
+          </div>
+          <p class="matrix-note">Ontario view · Operators registered with iGaming Ontario and the AGCO. Promotional inducements are not shown, in line with the Registrar's Standards. 19+.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ============================================================
+      JSON-LD SCHEMA — REVIEW / ItemList
+      Paste Review or ItemList structured data for the matrix here,
+      mirroring the visible ratings for search visibility.
+      ============================================================
+    -->
+
+    <!-- =============================== PAYMENTS =============================== -->
+    <section id="payments" class="section tint" aria-labelledby="pay-heading" style="scroll-margin-top:90px">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cashier Integrity</p>
+          <h2 id="pay-heading">How Canadians move money — and how fast it moves back</h2>
+          <p>We time real withdrawals across every listed operator and record the method, verification step, and hours to settle. Ontario records prioritise Interac and regulated rails; rest-of-Canada records include crypto settlement where offered.</p>
+        </div>
+        <div class="grid-3">
+          <div class="panel"><h3>Interac e-Transfer</h3><p>The default rail for regulated Ontario play. Median settlement recorded per operator.</p></div>
+          <div class="panel"><h3>Debit &amp; Cards</h3><p>Visa Debit and standard cards, benchmarked against stated processing windows.</p></div>
+          <div class="panel"><h3>Crypto Settlement</h3><p>BTC, ETH and stablecoins on offshore operators — shown outside Ontario only.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== ONTARIO HUB =============================== -->
+    <section id="ontario-hub" class="section" aria-labelledby="on-heading" style="scroll-margin-top:90px">
+      <div class="container">
+        <div class="split">
+          <div class="section-head">
+            <p class="eyebrow">Regulated Market · Ontario</p>
+            <h2 id="on-heading">The Ontario Hub</h2>
+            <p>Since April 2022, Ontario has run its own regulated iGaming market under iGaming Ontario and the AGCO. Advertising standards restrict how operators present bonuses and inducements to the public. Set your region to Ontario and this site follows those standards — you'll see licensing, registration numbers, payment rails and verified payout times instead of offers.</p>
+            <p style="margin-top:24px"><a href="#casinos" class="btn btn-ghost">See Ontario-registered operators →</a></p>
+          </div>
+          <div class="panel">
+            <p class="eyebrow" style="margin-bottom:16px">What the Ontario view shows</p>
+            <ul class="check-list">
+              <li><span class="yes">✓</span> iGaming Ontario / AGCO registration status</li>
+              <li><span class="yes">✓</span> Official registration numbers</li>
+              <li><span class="yes">✓</span> Interac and regulated payment options</li>
+              <li><span class="yes">✓</span> Verified payout processing times</li>
+              <li><span class="no">✕</span> No dollar figures, bonuses or free-spin credits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== METHODOLOGY =============================== -->
+    <section class="section dark" aria-labelledby="method-heading">
+      <div class="container">
+        <p class="eyebrow">How the index is built</p>
+        <h2 id="method-heading" class="section-head" style="font-size:clamp(1.7rem,4vw,2.5rem);margin-top:12px">A single, published scoring model — applied to every operator without exception.</h2>
+        <div class="method-grid">
+          <div class="method-step"><div class="num">01</div><h3>Licensing</h3><p>Regulator, standing and enforcement history verified at source.</p></div>
+          <div class="method-step"><div class="num">02</div><h3>Payout Testing</h3><p>Real cashouts timed and logged across methods.</p></div>
+          <div class="method-step"><div class="num">03</div><h3>Terms Integrity</h3><p>Wagering, caps and fine print read line by line.</p></div>
+          <div class="method-step"><div class="num">04</div><h3>Dispute History</h3><p>Complaint volume and resolution outcomes weighted in.</p></div>
+        </div>
+        <p class="mono" style="margin-top:24px;font-size:.78rem;color:rgba(255,255,255,.55)">Commercial relationships are recorded separately and carry zero weight in the Safety Index. <a href="methodology.html" style="color:#7fb0ff;text-decoration:underline">Read the full methodology →</a></p>
+      </div>
+    </section>
+
+    <!--
+      ============================================================
+      JSON-LD SCHEMA — FAQPage
+      Paste FAQ structured data here (methodology, Ontario rules,
+      payout testing) to earn FAQ rich results.
+      ============================================================
+    -->
+  </main>
+
+  <!-- =============================== FOOTER =============================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="foot-brand">
+          <a class="brand-logo" href="index.html" aria-label="CasinoIndexCA home">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1.5" y="1.5" width="21" height="21" rx="5" stroke="#0b1220" stroke-width="1.5"/><path d="M6 15.5 L10 9.5 L13 13 L18 6.5" stroke="#2f6bff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="brand-name">CasinoIndex<span>CA</span></span>
+          </a>
+          <p>Independent, data-driven safety indexing of online casinos serving Canadian players.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Index</h4>
+          <ul>
+            <li><a href="index.html#casinos">Operator Index</a></li>
+            <li><a href="index.html#payments">Payments</a></li>
+            <li><a href="methodology.html">Methodology</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="responsible-gambling.html">Responsible Gambling</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Ontario &amp; Legal</h4>
+          <ul>
+            <li><a href="https://www.agco.ca/" rel="nofollow noopener" target="_blank">AGCO</a></li>
+            <li><a href="https://igamingontario.ca/" rel="nofollow noopener" target="_blank">iGaming Ontario</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Compliance blocks -->
+      <div class="compliance">
+        <div class="compliance-card age">
+          <p class="eyebrow">19+ Age Restriction</p>
+          <p>You must be of legal gambling age in your province to register or play. Gambling can be addictive. Please play within your means.</p>
+        </div>
+
+        <!-- Ontario support (shown in Ontario region) -->
+        <div class="compliance-card hidden" data-region-view="on">
+          <p class="eyebrow verified-text">Ontario Support · ConnexOntario</p>
+          <p>Free, confidential help for anyone affected by gambling, available 24/7. <a href="tel:18665312600">1-866-531-2600</a>.</p>
+        </div>
+
+        <!-- National support (shown in Rest of Canada region) -->
+        <div class="compliance-card" data-region-view="roc">
+          <p class="eyebrow verified-text">National Support</p>
+          <p>If gambling stops being fun, help is available. See our <a href="responsible-gambling.html" style="text-decoration:underline">responsible gambling resources</a>, including guidance from the Canada Safety Council.</p>
+        </div>
+      </div>
+
+      <!-- Affiliate disclosure -->
+      <div class="disclosure">
+        <p><span class="mono">Affiliate disclosure —</span> CasinoIndexCA is an independent user-supported comparison platform. We may receive commissions from operators listed, which does not impact our data-driven, objective safety indexing score.</p>
+      </div>
+
+      <div class="foot-legal">
+        <p>© <span data-year>2026</span> CasinoIndexCA · All rights reserved.</p>
+        <p>Data reflects the CasinoIndexCA methodology and is for informational purposes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

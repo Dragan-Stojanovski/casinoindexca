@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Our Team, Methodology &amp; Editorial Standards | CasinoIndexCA</title>
+  <meta name="description" content="CasinoIndexCA is an independent consumer-auditing agency for Canadian online casinos. Meet our editorial team, see our published Safety Index methodology, our review process, and how we stay independent and player-first." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://casinoindexca.com/about/" />
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/img/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CasinoIndexCA" />
+  <meta property="og:title" content="About Us — Our Team, Methodology &amp; Editorial Standards | CasinoIndexCA" />
+  <meta property="og:description" content="Meet the editorial team behind CasinoIndexCA and read how we independently audit Canadian online casinos." />
+  <meta property="og:image" content="https://casinoindexca.com/assets/img/logo.svg" />
+  <meta property="og:locale" content="en_CA" />
+
+  <!-- JSON-LD: Organization (with team) + AboutPage + Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://casinoindexca.com/#organization",
+        "name": "CasinoIndexCA",
+        "url": "https://casinoindexca.com/",
+        "logo": "https://casinoindexca.com/assets/img/logo.svg",
+        "foundingDate": "2026",
+        "areaServed": "CA",
+        "slogan": "We audit the operators. Nobody audits our score.",
+        "description": "Independent consumer-auditing agency that scores online casinos serving Canadian players against a fixed, published Safety Index methodology.",
+        "knowsAbout": ["Online casino licensing","Casino payout testing","Responsible gambling","iGaming Ontario / AGCO regulation","Interac and crypto payments"],
+        "employee": [
+          { "@type": "Person", "name": "Daniel Fournier", "jobTitle": "Editor-in-Chief & Lead Analyst", "knowsAbout": ["Gaming licensing","Malta Gaming Authority","Kahnawake Gaming Commission","Curaçao Gaming Authority","AGCO"] },
+          { "@type": "Person", "name": "Emma Sinclair", "jobTitle": "Senior Casino Reviewer", "knowsAbout": ["Casino bonuses","Wagering requirements","Slot game libraries","Live dealer casinos"] },
+          { "@type": "Person", "name": "Marc Tremblay", "jobTitle": "Payments & Compliance Editor", "knowsAbout": ["Interac","Cryptocurrency payments","KYC","Withdrawal testing","AGCO advertising standards"] },
+          { "@type": "Person", "name": "Priya Anand", "jobTitle": "Responsible Gambling Editor & Fact-Checker", "knowsAbout": ["Responsible gambling","Player protection","Dispute resolution","Bonus terms integrity"] }
+        ]
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://casinoindexca.com/about/#aboutpage",
+        "url": "https://casinoindexca.com/about/",
+        "name": "About CasinoIndexCA",
+        "inLanguage": "en-CA",
+        "isPartOf": { "@id": "https://casinoindexca.com/#organization" },
+        "about": { "@id": "https://casinoindexca.com/#organization" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://casinoindexca.com/about/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://casinoindexca.com/" },
+          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://casinoindexca.com/about/" }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+
+  <style>
+    .about-prose { max-width: 74ch; }
+    .about-prose h2 { margin-top: 8px; font-size: clamp(1.4rem,3vw,1.8rem); }
+    .about-prose h3 { margin-top: 26px; font-size: 1.12rem; }
+    .about-prose p { color: var(--ink-soft); font-size: 1.02rem; line-height: 1.78; margin-top: 14px; }
+    .about-prose ul { margin-top: 14px; padding-left: 20px; color: var(--ink-soft); line-height: 1.7; }
+    .about-prose li { margin-top: 8px; }
+
+    /* Trust badges under hero */
+    .trust-badges { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
+    .trust-badges span { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:.76rem; padding:8px 14px; border-radius:var(--r-pill); border:1px solid var(--line-2); background:var(--panel); color:var(--ink-soft); }
+
+    .stat-row { display: grid; gap: 14px; grid-template-columns: repeat(2,1fr); }
+    @media (min-width: 760px){ .stat-row { grid-template-columns: repeat(4,1fr); } }
+    .stat { border: 1px solid var(--line); border-radius: var(--r); background: var(--panel); padding: 22px; text-align: center; box-shadow:var(--shadow-sm); }
+    .stat .n { font-family: var(--font-mono); font-weight: 600; font-size: 1.7rem; color: var(--ink); }
+    .stat .l { font-size: .78rem; color: var(--muted); margin-top: 6px; }
+
+    /* Editorial process timeline */
+    .process { display:grid; gap:0; margin-top:26px; }
+    .pstep { position:relative; padding:0 0 26px 54px; }
+    .pstep:last-child { padding-bottom:0; }
+    .pstep::before { content:attr(data-n); position:absolute; left:0; top:0; width:34px; height:34px; border-radius:50%; background:var(--accent); color:#fff; font-family:var(--font-mono); font-weight:700; font-size:.9rem; display:grid; place-items:center; }
+    .pstep::after { content:""; position:absolute; left:16.5px; top:34px; bottom:0; width:2px; background:var(--line); }
+    .pstep:last-child::after { display:none; }
+    .pstep h3 { margin:2px 0 0; font-size:1.05rem; }
+    .pstep p { margin-top:6px; color:var(--ink-soft); font-size:.94rem; line-height:1.6; }
+
+    /* Pillars with weights */
+    .weights { display: grid; gap: 14px; margin-top: 24px; }
+    .weight { border: 1px solid var(--line); border-radius: var(--r); background: var(--panel); padding: 18px 20px; }
+    .weight .top { display: flex; justify-content: space-between; align-items: baseline; }
+    .weight .top h3 { margin: 0; font-size: 1rem; }
+    .weight .top .pct { font-family: var(--font-mono); font-weight: 600; color: var(--accent); }
+    .weight .bar { height: 7px; border-radius: 999px; background: var(--line); overflow: hidden; margin-top: 12px; }
+    .weight .bar > span { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg,#d11f2d,#e0a021); }
+    .weight p { margin-top: 12px; font-size: .9rem; color: var(--ink-soft); line-height: 1.6; }
+
+    /* "What makes us different" cards */
+    .diff-grid { display:grid; gap:16px; grid-template-columns:1fr; margin-top:24px; }
+    @media (min-width:760px){ .diff-grid { grid-template-columns:repeat(3,1fr); } }
+    .diff { border:1px solid var(--line); border-radius:var(--r-lg); background:var(--panel); padding:24px; box-shadow:var(--shadow-sm); }
+    .diff .ic { width:44px; height:44px; border-radius:12px; display:grid; place-items:center; font-size:1.3rem; background:var(--bg-soft); border:1px solid var(--line-2); }
+    .diff h3 { margin-top:14px; font-size:1.05rem; }
+    .diff p { margin-top:8px; color:var(--ink-soft); font-size:.9rem; line-height:1.6; }
+
+    /* Regulators row */
+    .regs { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+    .regs span { font-size:.82rem; padding:8px 14px; border-radius:var(--r-pill); border:1px solid var(--line); background:var(--bg-soft); color:var(--ink-soft); }
+
+    /* Team */
+    .team { display: grid; gap: 18px; grid-template-columns: 1fr; margin-top: 28px; }
+    @media (min-width: 760px){ .team { grid-template-columns: 1fr 1fr; } }
+    .member { border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--panel); padding: 24px; box-shadow: var(--shadow-sm); }
+    .member-head { display:flex; gap:16px; align-items:center; }
+    .avatar { width: 58px; height: 58px; border-radius: 50%; flex: none; display: grid; place-items: center; color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; }
+    .member h3 { font-size: 1.06rem; }
+    .member .role { font-family: var(--font-mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-top: 3px; }
+    .member p { font-size: .9rem; color: var(--ink-soft); line-height: 1.62; margin-top: 14px; }
+    .xtags { display:flex; flex-wrap:wrap; gap:6px; margin-top:14px; }
+    .xtags span { font-size:.68rem; font-family:var(--font-mono); padding:4px 9px; border-radius:var(--r-pill); border:1px solid var(--line); background:var(--bg-soft); color:var(--muted); }
+    .li-icon { display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-size:.78rem; color:#0a66c2; font-weight:600; }
+  </style>
+</head>
+<body>
+
+  <!-- AGCO compliance banner (Ontario region only) -->
+  <div id="agco-banner" class="agco-banner hidden" role="status">
+    <div class="container">
+      <span class="tag">ON · AGCO MODE</span>
+      <span class="msg">Advertising standards applied — promotional offers, bonuses and credit inducements are not shown to Ontario visitors.</span>
+    </div>
+  </div>
+
+  <!-- =============================== HEADER =============================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand-logo" href="/" aria-label="CasinoIndexCA home">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#d11f2d"/><svg x="3.4" y="3.4" width="17.2" height="17.2" viewBox="80 40 420 440" preserveAspectRatio="xMidYMid meet"><path fill="#ffffff" d="M383.8 351.7c2.5-2.5 105.2-92.4 105.2-92.4l-17.5-7.5c-10-4.9-7.4-11.5-5-17.4l20-59.9-56.5 12.5c-5 1.2-8.4-2.5-9.9-7.4l-7.5-24.9-45 50.4c-6.2 7.5-18.7 7.5-14.9-10l19.9-105.6-27.4 14.9c-7.5 5-15 0-17.4-7.5l-30-59.9-30 59.9c-2.5 7.5-10 12.5-17.5 7.5l-27.4-14.9 19.9 105.6c3.7 17.5-8.7 17.5-14.9 10l-45-50.4-7.5 24.9c-1.5 5-5 8.7-9.9 7.4L96.8 166.6l20 59.9c2.5 6 5 12.5-5 17.4l-17.5 7.5s102.6 89.9 105.2 92.4c5 5 10 7.5 5 22.4l-10 32.4c37.4-4.9 72.4-9.9 109.8-14.9 3.7 0 10 5 10 10l-5 112.3h37.5l-5-112.3c0-5 6.2-10 10-10 37.4 5 72.4 10 109.8 14.9l-10-32.4c-5-14.9 0-17.4 5-22.4z"/></svg></svg>
+          <span class="brand-name">CasinoIndex<span>CA</span></span>
+        </a>
+        <span class="geo-badge">
+          <span class="pulse"></span>
+          <span class="mono">System: <span id="geo-badge">Canada · Standard</span></span>
+        </span>
+      </div>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li><li><a href="/#casinos">Operator Index</a></li><li><a href="/methodology">Methodology</a></li><li><a href="/#ontario-hub">Ontario</a></li><li><a href="/responsible-gambling">Responsible Gambling</a></li><li><a href="/about" class='is-active'>About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <span class="region-label eyebrow">Region</span>
+        <div class="seg" role="group" aria-label="Select your province or region">
+          <button type="button" class="seg-btn" data-region="roc" aria-pressed="true">Canada (RoC)</button>
+          <button type="button" class="seg-btn" data-region="on" aria-pressed="false">Ontario</button>
+        </div>
+        <label class="sr-only" for="region-select">Region</label>
+        <select id="region-select" class="sr-only">
+          <option value="roc">Canada (Rest of Country)</option>
+          <option value="on">Ontario</option>
+        </select>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul><li><a href="/">Home</a></li><li><a href="/#casinos">Operator Index</a></li><li><a href="/methodology">Methodology</a></li><li><a href="/#ontario-hub">Ontario</a></li><li><a href="/responsible-gambling">Responsible Gambling</a></li><li><a href="/about">About</a></li></ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="glow"></div>
+      <div class="container page-hero-inner">
+        <nav class="eyebrow" aria-label="Breadcrumb" style="margin-bottom:10px">
+          <a href="/" style="color:var(--muted)">Home</a> · <span>About</span>
+        </nav>
+        <p class="eyebrow">About the agency</p>
+        <h1>We audit the operators. <span class="gradient-text">Nobody audits our score.</span></h1>
+        <p>CasinoIndexCA is an independent consumer-auditing agency built for one job: telling Canadian players which real-money casinos are safe, fast and fair — measured, not marketed. Every review carries a named author and is fact-checked by a second editor.</p>
+        <div class="trust-badges">
+          <span>🍁 Canada-focused</span>
+          <span>🔍 Independent &amp; data-driven</span>
+          <span>👥 Named, accountable authors</span>
+          <span>🛡️ 19+ · Play responsibly</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- By the numbers -->
+    <section class="section" style="padding-bottom:0">
+      <div class="container">
+        <div class="stat-row">
+          <div class="stat"><div class="n">9+</div><div class="l">Operators audited in depth</div></div>
+          <div class="stat"><div class="n">4</div><div class="l">Scoring pillars, fixed weights</div></div>
+          <div class="stat"><div class="n">2</div><div class="l">Editors per published review</div></div>
+          <div class="stat"><div class="n">$0</div><div class="l">An operator can pay to rank</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-prose">
+
+        <h2>Who we are</h2>
+        <p>CasinoIndexCA is a Canadian-focused editorial team of casino analysts, payments specialists and responsible-gambling researchers. We publish independent audits of the online casinos that accept Canadian players — both offshore operators serving the rest of Canada and brands registered with iGaming Ontario. Our purpose is simple: replace the guesswork Canadians face when they deposit real money online with a measured, repeatable, published score we call the <strong>Safety Index</strong>.</p>
+        <p>We are readers' advocates first. Everything we publish is written to answer the questions a careful player actually asks before signing up — is this casino licensed, will it pay me quickly, are the bonus terms fair, and what happens if something goes wrong?</p>
+
+        <h2 style="margin-top:44px">Why we exist</h2>
+        <p>Most casino "review" sites are ranked by whoever pays the most. We think that gets it backwards. Canadians deposit real money with operators they have no easy way to vet — offshore licences, opaque terms, and withdrawal times that only reveal themselves after you've already won. CasinoIndexCA turns that guesswork into a measured, repeatable score, and we show our work: every rating links to the reasoning behind it.</p>
+      </div>
+    </section>
+
+    <!-- Editorial process -->
+    <section class="section tint">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Show your work</p>
+          <h2>How we review a casino</h2>
+          <p>Every operator goes through the same six-stage process before it earns a Safety Index score. No shortcuts, and no exceptions for advertisers.</p>
+        </div>
+        <div class="process">
+          <div class="pstep" data-n="1"><h3>Shortlist &amp; licence check</h3><p>We confirm the operator accepts Canadian players and verify its licence and operating company against the issuing regulator's public register.</p></div>
+          <div class="pstep" data-n="2"><h3>Fund a real account</h3><p>We register and deposit our own money using Canadian methods — Interac, cards or crypto — and keep the dated receipt. No demo accounts.</p></div>
+          <div class="pstep" data-n="3"><h3>Test the payout</h3><p>We request a real withdrawal, time it end-to-end, and quiz live chat on cashout policy, KYC and limits.</p></div>
+          <div class="pstep" data-n="4"><h3>Read every term</h3><p>Wagering, max-bet rules, win caps, game weighting, dormancy fees and payment exclusions — read line by line from the operator's own documents.</p></div>
+          <div class="pstep" data-n="5"><h3>Score &amp; second-editor check</h3><p>The four weighted pillars are scored, then a second editor fact-checks the review before it can be published.</p></div>
+          <div class="pstep" data-n="6"><h3>Publish &amp; maintain</h3><p>Each review is dated and revisited as offers, terms and licences change. Any material change can move a score or trigger a flag at any time.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-prose">
+        <h2>How the Safety Index works</h2>
+        <p>Every operator is scored out of 10 against four weighted pillars. The weights are fixed and applied identically to every casino, whether we have a commercial relationship with them or not.</p>
+        <div class="weights">
+          <div class="weight">
+            <div class="top"><h3>Licensing &amp; Trust</h3><span class="pct">35%</span></div>
+            <div class="bar"><span style="width:35%"></span></div>
+            <p>Which regulator licenses the operator, that licence's standing and enforcement history, corporate transparency, and the brand's track record and longevity.</p>
+          </div>
+          <div class="weight">
+            <div class="top"><h3>Payout Reliability</h3><span class="pct">30%</span></div>
+            <div class="bar"><span style="width:30%"></span></div>
+            <p>How quickly and predictably an operator pays. We look at observed withdrawal times across Interac, e-wallets, cards and crypto, plus limits and cashout friction.</p>
+          </div>
+          <div class="weight">
+            <div class="top"><h3>Terms Integrity</h3><span class="pct">20%</span></div>
+            <div class="bar"><span style="width:20%"></span></div>
+            <p>Wagering requirements, max-bet rules, win caps, game weighting, dormancy fees and payment exclusions — rewarding operators whose terms are fair and clearly published.</p>
+          </div>
+          <div class="weight">
+            <div class="top"><h3>Dispute History</h3><span class="pct">15%</span></div>
+            <div class="bar"><span style="width:15%"></span></div>
+            <p>Complaint volume relative to size, and — more importantly — how the operator resolves disputes. A clean record lifts the score; unpaid winnings sink it.</p>
+          </div>
+        </div>
+        <p style="margin-top:18px">The full weighting model and testing process are public. <a href="/methodology">Read the complete methodology →</a></p>
+      </div>
+    </section>
+
+    <!-- What makes us different -->
+    <section class="section tint">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">What sets us apart</p>
+          <h2>Why CasinoIndexCA is different</h2>
+        </div>
+        <div class="diff-grid">
+          <div class="diff">
+            <div class="ic">🔒</div>
+            <h3>The score can't be bought</h3>
+            <p>Affiliate commissions are logged separately and carry zero weight in the Safety Index. Reviewers don't know an operator's commercial status while scoring.</p>
+          </div>
+          <div class="diff">
+            <div class="ic">💵</div>
+            <h3>We use our own money</h3>
+            <p>Every audit starts with a funded account and a real withdrawal test — not marketing claims or copied specs.</p>
+          </div>
+          <div class="diff">
+            <div class="ic">🍁</div>
+            <h3>Built for Canada</h3>
+            <p>Interac-first banking, CAD limits, and a region toggle that follows AGCO advertising standards for Ontario automatically.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-prose">
+        <h2>Editorial standards</h2>
+        <p>We hold every page on this site to the same standards, because trust is the only thing a review site is really selling.</p>
+        <ul>
+          <li><strong>Named authors.</strong> Every review is written by a named member of our team and reviewed by a second editor. The byline and fact-checker appear at the top of each page.</li>
+          <li><strong>Primary sources.</strong> Licensing details, company registration and bonus terms come from the operator's own published terms and the relevant regulator — not from other review sites.</li>
+          <li><strong>Fixed methodology.</strong> The same scoring model is applied to every operator. No operator sees or influences its score before publication.</li>
+          <li><strong>Transparent flaws.</strong> When a casino has strict terms, low limits or undisclosed licensing, we say so plainly — even for operators we earn commission from.</li>
+          <li><strong>Dated &amp; maintained.</strong> Reviews carry a last-updated date and are revisited as offers, terms and licences change.</li>
+        </ul>
+
+        <div class="callout">
+          <p class="eyebrow">How we're funded</p>
+          <p>CasinoIndexCA is free for readers because we earn affiliate commissions from some of the operators we list. Those commercial relationships are recorded in a separate ledger and carry <strong>zero weight</strong> in the Safety Index. An operator cannot buy a higher score, a better position, or the removal of a flag. If an operator we're paid by fails an audit, it gets flagged. The data decides — every time.</p>
+        </div>
+
+        <h2 style="margin-top:44px">Sources we verify against</h2>
+        <p>Licensing and compliance claims are checked directly against the issuing authority, not repeated second-hand:</p>
+        <div class="regs">
+          <span>Malta Gaming Authority</span>
+          <span>Kahnawake Gaming Commission</span>
+          <span>Curaçao Gaming Authority</span>
+          <span>AGCO &amp; iGaming Ontario</span>
+          <span>Operator T&amp;Cs</span>
+        </div>
+
+        <h2 style="margin-top:44px">Regional compliance</h2>
+        <p>Ontario runs its own regulated iGaming market under the AGCO and iGaming Ontario, with advertising standards that restrict how bonuses and inducements are shown. When a visitor selects the Ontario region, our site follows those standards automatically — showing licensing, registration and verified payout data instead of promotional figures. Across the rest of Canada, we show the full picture including bonuses, always alongside the terms that apply.</p>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section tint">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The people behind the scores</p>
+          <h2 id="team" style="scroll-margin-top:90px">Meet the editorial team</h2>
+          <p>CasinoIndexCA is written and maintained by a small, specialised team. Each reviewer owns the areas they know best, and no review is published without a second editor's fact-check.</p>
+        </div>
+
+        <div class="team">
+          <div class="member">
+            <div class="member-head">
+              <div class="avatar" style="background:linear-gradient(135deg,#e01e2b,#8a0d16)">DF</div>
+              <div>
+                <h3>Daniel Fournier</h3>
+                <div class="role">Editor-in-Chief &amp; Lead Analyst</div>
+              </div>
+            </div>
+            <p>Daniel oversees the Safety Index and has final sign-off on every published score. Based in Montréal, he specialises in the licensing frameworks that matter to Canadian players and verifies each operator's licence and operating company at source.</p>
+            <div class="xtags"><span>Licensing</span><span>MGA</span><span>Kahnawake</span><span>Curaçao</span><span>AGCO</span></div>
+            <a class="li-icon" href="#team"><svg width="15" height="15" viewBox="0 0 24 24" fill="#0a66c2" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
+          </div>
+
+          <div class="member">
+            <div class="member-head">
+              <div class="avatar" style="background:linear-gradient(135deg,#a855f7,#6d28d9)">ES</div>
+              <div>
+                <h3>Emma Sinclair</h3>
+                <div class="role">Senior Casino Reviewer</div>
+              </div>
+            </div>
+            <p>Emma leads our hands-on casino reviews from Toronto. She dissects welcome packages and reload offers, reads the wagering and win-cap fine print, and assesses the depth of each lobby so readers know exactly what a bonus is really worth.</p>
+            <div class="xtags"><span>Bonuses</span><span>Wagering terms</span><span>Slots</span><span>Live dealer</span></div>
+            <a class="li-icon" href="#team"><svg width="15" height="15" viewBox="0 0 24 24" fill="#0a66c2" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
+          </div>
+
+          <div class="member">
+            <div class="member-head">
+              <div class="avatar" style="background:linear-gradient(135deg,#2dd4bf,#0d766e)">MT</div>
+              <div>
+                <h3>Marc Tremblay</h3>
+                <div class="role">Payments &amp; Compliance Editor</div>
+              </div>
+            </div>
+            <p>Marc covers the cashier — the part of a casino players feel most directly. Bilingual and detail-driven, he benchmarks deposit and withdrawal methods, documents KYC and payout timelines, and keeps our Ontario coverage within AGCO advertising standards.</p>
+            <div class="xtags"><span>Interac</span><span>Crypto</span><span>KYC</span><span>Payout testing</span><span>AGCO</span></div>
+            <a class="li-icon" href="#team"><svg width="15" height="15" viewBox="0 0 24 24" fill="#0a66c2" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
+          </div>
+
+          <div class="member">
+            <div class="member-head">
+              <div class="avatar" style="background:linear-gradient(135deg,#f7d774,#e0a021);color:#3a2a06">PA</div>
+              <div>
+                <h3>Priya Anand</h3>
+                <div class="role">Responsible Gambling Editor &amp; Fact-Checker</div>
+              </div>
+            </div>
+            <p>Priya fact-checks our reviews and owns our responsible-gambling coverage. She pressure-tests bonus terms for hidden traps, researches operators' dispute histories, and ensures every page points players to the right support and reflects our 19+ commitment.</p>
+            <div class="xtags"><span>Player safety</span><span>Terms integrity</span><span>Disputes</span><span>Fact-checking</span></div>
+            <a class="li-icon" href="#team"><svg width="15" height="15" viewBox="0 0 24 24" fill="#0a66c2" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
+          </div>
+        </div>
+        <p class="mono" style="margin-top:18px;font-size:.76rem;color:var(--faint)">Reviewer LinkedIn profiles are added as team members are onboarded publicly. Replace the placeholder links with each reviewer's profile before launch.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-prose">
+        <h2>Corrections &amp; contact</h2>
+        <p>We get things wrong sometimes, and we fix them fast. Spotted an error in an audit, a bonus that has changed, or an operator behaving badly? Tell us and we'll investigate and update the record. <a href="/contact">Get in touch →</a></p>
+
+        <div class="callout" style="margin-top:20px">
+          <p class="eyebrow verified-text">Responsible gambling commitment</p>
+          <p>Gambling should stay entertainment. We publish responsible-gambling resources on every page, reward operators with easy limits and self-exclusion, and never target anyone under 19. If gambling stops being fun, <a href="/responsible-gambling" style="text-decoration:underline">help is here</a>.</p>
+        </div>
+
+        <p class="mono" style="margin-top:20px;font-size:.78rem;color:var(--faint)">Last reviewed: July 2026 · 19+ · CasinoIndexCA provides information for Canadian players and does not operate any gambling service. Please play within your means.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- =============================== FOOTER =============================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="foot-brand">
+          <a class="brand-logo" href="/" aria-label="CasinoIndexCA home">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#d11f2d"/><svg x="3.4" y="3.4" width="17.2" height="17.2" viewBox="80 40 420 440" preserveAspectRatio="xMidYMid meet"><path fill="#ffffff" d="M383.8 351.7c2.5-2.5 105.2-92.4 105.2-92.4l-17.5-7.5c-10-4.9-7.4-11.5-5-17.4l20-59.9-56.5 12.5c-5 1.2-8.4-2.5-9.9-7.4l-7.5-24.9-45 50.4c-6.2 7.5-18.7 7.5-14.9-10l19.9-105.6-27.4 14.9c-7.5 5-15 0-17.4-7.5l-30-59.9-30 59.9c-2.5 7.5-10 12.5-17.5 7.5l-27.4-14.9 19.9 105.6c3.7 17.5-8.7 17.5-14.9 10l-45-50.4-7.5 24.9c-1.5 5-5 8.7-9.9 7.4L96.8 166.6l20 59.9c2.5 6 5 12.5-5 17.4l-17.5 7.5s102.6 89.9 105.2 92.4c5 5 10 7.5 5 22.4l-10 32.4c37.4-4.9 72.4-9.9 109.8-14.9 3.7 0 10 5 10 10l-5 112.3h37.5l-5-112.3c0-5 6.2-10 10-10 37.4 5 72.4 10 109.8 14.9l-10-32.4c-5-14.9 0-17.4 5-22.4z"/></svg></svg>
+            <span class="brand-name">CasinoIndex<span>CA</span></span>
+          </a>
+          <p>Independent, data-driven safety indexing of online casinos serving Canadian players.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Index</h4>
+          <ul>
+            <li><a href="/#casinos">Operator Index</a></li>
+            <li><a href="/methodology">Methodology</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/responsible-gambling">Responsible Gambling</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Ontario &amp; Legal</h4>
+          <ul>
+            <li><a href="https://www.agco.ca/" rel="nofollow noopener" target="_blank">AGCO</a></li>
+            <li><a href="https://igamingontario.ca/" rel="nofollow noopener" target="_blank">iGaming Ontario</a></li>
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/terms">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="compliance">
+        <div class="compliance-card age">
+          <p class="eyebrow">19+ Age Restriction</p>
+          <p>You must be of legal gambling age in your province to register or play. Gambling can be addictive. Please play within your means.</p>
+        </div>
+        <div class="compliance-card hidden" data-region-view="on">
+          <p class="eyebrow verified-text">Ontario Support · ConnexOntario</p>
+          <p>Free, confidential help for anyone affected by gambling, available 24/7. <a href="tel:18665312600">1-866-531-2600</a>.</p>
+        </div>
+        <div class="compliance-card" data-region-view="roc">
+          <p class="eyebrow verified-text">National Support</p>
+          <p>If gambling stops being fun, help is available. See our <a href="/responsible-gambling" style="text-decoration:underline">responsible gambling resources</a>, including guidance from the Canada Safety Council.</p>
+        </div>
+      </div>
+
+      <div class="disclosure">
+        <p><span class="mono">Affiliate disclosure —</span> CasinoIndexCA is an independent user-supported comparison platform. We may receive commissions from operators listed, which does not impact our data-driven, objective safety indexing score.</p>
+      </div>
+
+      <div class="foot-legal">
+        <p>© <span data-year>2026</span> CasinoIndexCA · All rights reserved.</p>
+        <p>Data reflects the CasinoIndexCA methodology and is for informational purposes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
